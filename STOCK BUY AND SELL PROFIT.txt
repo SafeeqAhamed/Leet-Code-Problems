@@ -1,0 +1,25 @@
+STOCK BUY AND SELL PROFIT
+
+
+CODE:
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) 
+    {   int arr[] = {7,6,4,3,1};
+        int n=arr.length;
+        int profit=0;
+        for(int i=0;i<n;i++)
+                  {for(int j=i+1;j<n;j++)
+                             {profit=Math.max(arr[j]-arr[i],profit);}
+                  }
+        System.out.print(profit);              
+                   
+    }
+}
+
+
+
+Time complexity: O(n^2)
+
+Space Complexity: O(1)   input vangrathu space complexity la varathu
